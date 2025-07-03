@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Date Picker</title>
+</head>
+<body>
+    <div class="date-picker">
+        <div class="header">
+            <div class="selected-date">You have selected <span id="selectedDate">...</span></div>
+        </div>
+        
+        <div class="month-year">
+            <button class="nav-btn" onclick="changeMonth(-1)">‹</button>
+            <div class="month-title" id="monthTitle">Month</div>
+            <button class="nav-btn" onclick="changeMonth(1)">›</button>
+        </div>
+
+        <div class="calendar">
+            <div class="weekdays">
+                <div class="weekday">Sun</div>
+                <div class="weekday">Mon</div>
+                <div class="weekday">Tue</div>
+                <div class="weekday">Wed</div>
+                <div class="weekday">Thu</div>
+                <div class="weekday">Fri</div>
+                <div class="weekday">Sat</div>
+            </div>
+            <div class="days" id="daysContainer"></div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-cancel">CANCEL</button>
+            <button class="btn btn-save">SAVE</button>
+        </div>
+    </div>
+
+   <script src="app.js"></script>
+</body>
+</html>

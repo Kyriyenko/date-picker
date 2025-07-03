@@ -1,0 +1,146 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.date-picker {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.header {
+    background: #ff6b6b;
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+
+.selected-date {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.month-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #00b894;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #00b894;
+    color: white;
+}
+
+.month-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.calendar {
+    width: 100%;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.weekday {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    aspect-ratio: 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    color: #333;
+}
+
+.day:hover {
+    background: #ddd;
+}
+
+.day.selected {
+    background: #ff6b6b;
+    color: white;
+}
+
+.day.other-month {
+    color: #ccc;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-cancel {
+    background: none;
+    color: #ff6b6b;
+}
+
+.btn-save {
+    background: #ff6b6b;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
